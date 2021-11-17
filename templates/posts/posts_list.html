@@ -1,0 +1,18 @@
+{% extends '_base.html' %}
+
+{% block content %}
+<section class="posts-list">
+    {% for post in posts %}
+    <div class='post'>
+        
+        <p>{{ post.content }}</p>
+        <div class='meta'>
+            <p>{{ post.created}}</p>
+            <p>{{ post.added_by}}</p>
+        </div>
+        
+        <a class="btn-link" id='delete-btn' href="{% url 'posts_delete' post.pk %}"> <button>Delete</button> </a>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}
