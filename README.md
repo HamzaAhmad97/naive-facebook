@@ -2,6 +2,5 @@
 
 ## Pull Requests
 
-[Latest open pull request.]()
+[Latest open pull request.](https://github.com/HamzaAhmad97/naive-facebook/pull/1)
 
-## Preview
