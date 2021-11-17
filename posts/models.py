@@ -6,7 +6,7 @@ from django.urls import reverse
 class Post(models.Model):
     content = models.TextField()
     added_by = models.ForeignKey(get_user_model(),
-        null=True, blank=True, on_delete=CASCADE)
+        null=False, blank=False, on_delete=CASCADE, auto_created=True)
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

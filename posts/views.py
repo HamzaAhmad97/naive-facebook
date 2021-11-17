@@ -10,7 +10,7 @@ class PostListView(ListView):
 
 class PostCreateView(CreateView):
     model = Post
-    fields = ['content']
+    fields = ['content', 'added_by']
     template_name = 'posts/posts_create.html'
 
 class PostDeleteView(DeleteView):
